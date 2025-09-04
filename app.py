@@ -10,7 +10,7 @@ st.set_page_config(page_title="🐶🐱 Klasifikasi Gambar")
 def load_model():
     model_path = hf_hub_download(
         repo_id="zahratalitha/klasifikasikucing",  # ganti sesuai repo kamu
-        filename="kucinganjing.h5"                 # pastikan format .h5
+        filename="kucinganjing_full.h5"                 # pastikan format .h5
     )
     model = tf.keras.models.load_model(model_path, compile=False)
     return model
